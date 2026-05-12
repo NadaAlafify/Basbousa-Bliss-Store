@@ -270,7 +270,7 @@ body{
 @media(max-width : 768px){
 
     .first-section{
-        min-height:40vh;
+        min-height:20vh;
     }
 
     .div1{
@@ -410,7 +410,7 @@ body{
 
 
 .Third-section{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #df8364b2;
 }
@@ -423,9 +423,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 40px 20px;
-    /* background-color: aliceblue; */
     background-color: #94554062;
     height: 45px;
+    min-height: auto;
     width: 100%;
   }
 
@@ -436,6 +436,8 @@ body{
   
 .sec3-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateX(-45px);
 
   }
@@ -465,7 +467,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    min-height: 400px;
     width: 100%;
     margin-top: -15px;
 
@@ -491,10 +493,13 @@ body{
 .div4-child-sec3{    background-image: url(../pic/pic20.jpg);}
 
 .div2-child-sec3, .div2-text-sec3{ margin-left: 15px; margin-right: 15px;}
-.div3-child-sec3, .div3-text-sec3{margin-right: 15px;}
+.div3-child-sec3, .div3-text-sec3{
+    margin-right: 15px;
+}
 
 .div3-sec3-parent{
-    height: 100px;
+    min-height: 100px;
+    /* min-height: auto; */
 }
 .div1-text-sec3{
  height: 100px;
@@ -614,6 +619,56 @@ color: #ff6347;}
 .sec3-text2{
     font-weight: bold;
     text-align: center;
+}
+@media(max-width: 768px){
+
+    .Third-section{
+        min-height: 100vh;
+    }
+    .div1-sec3{
+        display: flex;
+        flex-direction: column;
+        min-height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-sec3{
+        width: 200px;
+        height: auto;
+        text-align: center;
+        transform: translate(0px , 0px);
+        /* background-color: green; */
+    }
+    .sec3links{
+        width: 100%;
+    }
+    .sec3-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transform: translateX(1px);
+        /* background-color: green; */
+    }
+    .line-sec3{
+        display: none;
+    }
+    .div2-sec3-parent , .div3-sec3-parent{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .div2-sec3-parent{
+        margin-top: 20px;
+    }
+    .div3-sec3-parent{
+        min-height: 570px;
+    }
+    .div3-child-sec3, .div3-text-sec3{
+        margin-right: 0;
+    }
+    .left-arrow-sec3 , .right-arrow-sec3{
+        display: none;
+    }
 }
 
 /* <!--/////////////////////////////////////////fourth section //////////////////////////////////--> */
