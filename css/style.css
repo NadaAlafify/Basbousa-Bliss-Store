@@ -8,6 +8,7 @@ body{
     font-family: "Arima", serif;
     font-optical-sizing: auto;
     height: 1000px;
+    background-color: #ac7d6bc7;
 }
 .first-section{
     
@@ -16,7 +17,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: auto;
+    /* margin: auto; */
     min-height: 100vh;
     display:flex;
     flex-direction:column;
@@ -192,7 +193,6 @@ body{
   
  
   .div1-links .after_contact:hover .submenu {
-    /* display: flex; */
     visibility: visible; 
     opacity: 1; 
     visibility: visible;
@@ -269,6 +269,10 @@ body{
 
 @media(max-width : 768px){
 
+    .first-section{
+        min-height:40vh;
+    }
+
     .div1{
         flex-direction:column;
         flex-wrap: wrap;
@@ -279,9 +283,13 @@ body{
     }
     .div1-links{
         padding:15px 0 ;
+        justify-content:center;
     }
     .submenu{
         display:none;
+    }
+    .div2{
+        margin-top:-40px;
     }
 
 }
@@ -293,15 +301,18 @@ body{
 .Second-section{
 
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background-color: #ac7d6bc7;
+
 }
 
 .father{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    flex-wrap:wrap;
+    width:100%;
+    min-height:inherit;
 }
 .container {
     position: relative;
@@ -378,6 +389,22 @@ body{
     height: 55%; 
     background: linear-gradient(to top, rgba(79, 42, 24, 0.78), rgba(255, 255, 255, 0)); 
     z-index: 2;
+}
+
+@media (max-width:768px){
+    .Second-section{
+        min-height:50vh;
+    }
+    .father{
+        flex-direction:column;
+        gap:15px
+    }
+    .container1{
+        margin-top:15px;
+    }
+    .container3{
+        margin-bottom:15px;
+    }
 }
 /* <!--/////////////////////////////////////////third section //////////////////////////////////--> */
 
