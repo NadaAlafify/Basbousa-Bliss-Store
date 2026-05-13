@@ -17,7 +17,6 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /* margin: auto; */
     min-height: 100vh;
     display:flex;
     flex-direction:column;
@@ -77,7 +76,6 @@ body{
     content: '';
     position: absolute;
     border: 2px solid rgba(255, 255, 255, 0); 
-    /* border-radius: 8px; */
     box-sizing: border-box;
     width: 0;
     height: 0;
@@ -102,7 +100,7 @@ body{
 .div1-links a:hover::after {
     width: 100%;
     height: 100%;
-    border-color: rgb(249, 34, 34); /* تغيير لون الإطار */
+    border-color: rgb(249, 34, 34); 
 }
 
 .div1-icons {
@@ -224,7 +222,6 @@ body{
 .div2{
     width:100%;
     height: 530px;
-    /* background-color:red; */
     display:flex;
     justify-content:center;
     align-items:center;
@@ -234,7 +231,6 @@ body{
    
     height: 300px;
     width: 500px;  
-    /* background-color:green; */
     color: white;
 
 }
@@ -293,9 +289,6 @@ body{
     }
 
 }
-
-
-
 
 /* <!--/////////////////////////////////////////second section //////////////////////////////////--> */
 
@@ -509,7 +502,6 @@ body{
 
 .div3-sec3-parent{
     min-height: 100px;
-    /* min-height: auto; */
 }
 .div1-text-sec3{
  height: 100px;
@@ -647,7 +639,6 @@ color: #ff6347;}
         height: auto;
         text-align: center;
         transform: translate(0px , 0px);
-        /* background-color: green; */
     }
     .sec3links{
         width: 100%;
@@ -658,7 +649,6 @@ color: #ff6347;}
         align-items: center;
         flex-wrap: wrap;
         transform: translateX(1px);
-        /* background-color: green; */
     }
     .line-sec3{
         display: none;
@@ -721,7 +711,6 @@ color: #ff6347;}
 .div2-sec4-content{
     width: 400px;
     min-height: 300px;
-    /* background-color: green; */
 
 }
 
@@ -742,7 +731,6 @@ color: #ff6347;}
   
   .div2-sec4-member {
     display: flex;
-    /* background-color: green; */
     justify-content: center;
     width: 400px; 
   }
@@ -787,12 +775,10 @@ color: #ff6347;}
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
-        /* background-color: green; */
     }
     .header-sec4{
         width: 100%;
         transform: translate(0px , 0px);
-        /* background-color: red; */
 
     }
     .sec4allContents{
@@ -801,7 +787,6 @@ color: #ff6347;}
     .description-sec4{
         width: 280px;
         min-height: 280px;
-        /* background-color: green; */
         margin: 20px auto 0;
 
     }
@@ -811,10 +796,8 @@ color: #ff6347;}
     .div2-sec4-member{
         margin: auto;
         width: 100%;
-        /* background-color: green; */
     }
     .member-info{
-        /* background-color: green; */
         margin: 0 0 0 8px;
     }
 
@@ -970,14 +953,12 @@ color: #ff6347;}
 }
 
 .sec5-father2{
-    /* height: auto; */
-    /* background-color: green; */
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    /* position: relative; */
     height: 80px;
     width: 100%;
     transform: translateY(15px);
@@ -986,14 +967,10 @@ color: #ff6347;}
     background-color: #94554062;
     text-align: center;
     border-radius: 20px;
-    /* position: absolute; */
     width: 250px;
     min-height: 100%;
-    /* transform: translateX(-400px); */
 }
-/* .div-two{ transform: translatex(-130px);}
-.div-three{transform: translatex(140px);}
-.div-four{transform: translatex(410px);} */
+
 
  .p3-sec5 , .p4-sec5 , .p7-sec5 , .p8-sec5{transform: translateY(4px);}
  .p1-sec5 , .p5-sec5 {text-align: left; padding-left: 20px;transform: translateY(2px);}
@@ -1049,7 +1026,7 @@ color: #ff6347;}
 /* <!--/////////////////////////////////////////sixth section //////////////////////////////////--> */
 
 .six-section{
-    height: 120vh;
+    min-height: 120vh;
     width: 100%;
     background-color: #f15c2a96;
 }
@@ -1060,23 +1037,29 @@ color: #ff6347;}
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    flex-wrap: wrap;
     height: 350px;
+    min-height: auto;
     width: 100%;
     transform: translateY(30px);
 }
-.second-parent-sec6{transform: translateY(60px); height: 230px;}
+.second-parent-sec6{
+    transform: translateY(60px); 
+    height: 230px;
+    min-height: auto;
+}
 
-.div6-one , .div6-2 , .div6-two , .div6-2-2 , .div6-three , .div6-3-3{ 
-    position: absolute;
-    height: 100%;
+.div6-one , .div6-2 , .div6-two , .div6-2-2 , .div6-three , .div6-3-3{     
     width: 320px;
-    transform: translateX(-330px);
     display: block;
     transition: all 1s;
 
 }
+.div6-2 , .div6-2-2 , .div6-3-3{
+    height: 230px;
+}
 .div6-one , .div6-two , .div6-three{
+    height: 350px;
     background-image: url(../pic/pic31.jpg);
     background-size: cover;
     box-shadow: 8px 5px 10px rgba(152, 20, 20, 0.425);
@@ -1087,7 +1070,7 @@ color: #ff6347;}
 
 .div6-one:hover,.div6-two:hover , .div6-three:hover {width: 330px;height: 360px;}
 .div6-two , .div6-2-2{ margin: 0 20px; transform: translateX(15px);}
-.div6-three , .div6-3-3{ margin: 0 20px; transform: translateX(360px);}
+.div6-three , .div6-3-3{ margin: 0 20px; }
 .p2-sec6{text-align: center; font-weight: bold;}
 .p4-sec6{text-align: center; transition: all 0.5s ease;}
 .sec6-links{color: #333;}
@@ -1096,6 +1079,36 @@ color: #ff6347;}
 .div6-2-2, .div6-3-3 , .div6-2{border: 1px solid grey;}
 .div6-2-2:hover .p2-sec6-2 , .div6-2:hover .p2-sec6-1 , .div6-3-3:hover .p2-sec6-3{color: white; transform: scale(1.01);}
 .p2-sec6-2 , .p2-sec6-1 ,.p2-sec6-3{transition: all 0.8s ease;}
+
+@media(max-width: 768px){
+
+    .six-section{
+        width: 100%;
+        min-height: 1300px;
+    }
+    
+    .second-parent-sec6 , .first-parent-sec6{
+        width: 100%;
+        min-height:850px ;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+    .first-parent-sec6{
+        min-height:1200px ;
+    }
+    .second-parent-sec6{
+        transform: translateX(0);
+    }
+    .div6-one , .div6-2 , .div6-two , .div6-2-2 , .div6-three , .div6-3-3{
+        margin: 0;
+        transform: translateX(0);
+        
+    }
+}
 
 
 /* <!--/////////////////////////////////////////seventh section //////////////////////////////////--> */
