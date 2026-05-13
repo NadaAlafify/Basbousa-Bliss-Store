@@ -1119,15 +1119,25 @@ color: #ff6347;}
     height: 50vh;
     background-color: #ac7d6b88;
 }
+.sec7Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .sec7-father{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    min-height: auto;
 }
 
-.sec7-father , .sec7-father2{  transform: translateY(80px);}
 .container7 {
     position: relative;
     width: 250px;
@@ -1186,6 +1196,7 @@ color: #ff6347;}
     transform: translateX(20px);    
  }
 
+
 .container7:hover .hidden-sec7-icons {
     opacity: 1; 
 }
@@ -1199,19 +1210,16 @@ color: #ff6347;}
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
+    flex-wrap: wrap;
     height: 80px;
+    min-height: auto;
     width: 100%;
+    gap: 10px;
 }
 .div-7-one , .div-7-two , .div-7-three , .div-7-four{ 
-    position: absolute;
     width: 250px;
-    height: 100%;
-    transform: translatex(-400px);
+    height: 80px;
 }
-.div-7-two{ transform: translatex(-130px);}
-.div-7-three{transform: translatex(140px);}
-.div-7-four{transform: translatex(410px);}
 
 .sec7-father2{text-align: center;}
 .sec7-father2 h3 {
@@ -1224,6 +1232,56 @@ color: #ff6347;}
     font-size: 16px;
     margin: 5px 0 0;
     color: black;
+}
+
+@media(max-width:768px){
+    .seventh-section{
+        min-height: 500px;
+    }
+
+
+    .sec7Container{
+        width: 100%;
+        min-height: 800px;
+        justify-content: flex-start;
+    }
+     .sec7-father2{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        min-height: 400px;
+        width: 100%;
+        gap: 10px;
+        
+    }
+    .sec7-father {
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 0.5rem;
+        min-height: 80px;
+    }
+
+    .container7-2 , .container7-3 ,  .container7-4{
+        margin: 0;
+    }
+   
+    .hidden-sec7-icons {
+        display: block;
+     }
+     .div-7-one p , .div-7-two p , .div-7-three p, .div-7-four p{
+        font-size: 16px;
+     }
+     .div-7-one , .div-7-two , .div-7-three , .div-7-four{
+        width: 220px;
+        height: 110px;
+        min-height: auto;
+        margin: 0;
+     }
+
+
 }
 
 /* <!--///////////////////////////////////////// section-eight //////////////////////////////////-->  */
