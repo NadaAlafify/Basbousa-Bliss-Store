@@ -1288,8 +1288,10 @@ color: #ff6347;}
 .eigth-section{
     width: 100%;
     height: 80vh;
+    min-height: auto;
     margin-top: 30px;
     background-color: #ce9883c7; 
+    
 }
 
 .div8-1 {
@@ -1298,6 +1300,7 @@ color: #ff6347;}
     align-items:center;
     background-color: rgba(155, 67, 35, 0.756);
     height: 80px;
+    min-height: auto;
     width: 100%;
   }
 .p1-sec8{padding-left: 15px;}
@@ -1344,38 +1347,34 @@ border:1px solid white;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
+    flex-wrap: wrap;
     height: 300px;
+    min-height: auto;
     width: 100%;
-   padding: 0px 0 30px 20px;
-   margin-top: 30px;
-    cursor: default;
+    gap: 10px;
+    margin-top: 30px;
 }
 .div-8-1 , .div-8-2 , .div-8-3 , .div-8-4, .div-8-5{  
-    background-color: #94554015;
+    background-color: hsla(15, 40%, 42%, 0.082);
     color: black;
     text-align: center;
     border-radius: 20px;
-    position: absolute;
     width: 220px;
-    height: 100%;
-    transform: translateX(-480px);
+    height: 300px;
+
 }
 
 .div-8-1 img{border-radius: 20px; margin-top: 50px;}
 
-.div-8-2{ transform: translatex(-250px);}
-.div-8-3{transform: translatex(-20px);}
-.div-8-4{transform: translatex(210px);}
-.div-8-5{transform: translatex(440px);}
 
 .p11-sec8 , .p33-sec8 , .p55-sec8 , .p77-sec8 , .p99-sec8{
     font-weight: bold;
     font-size: 18px;
     text-align: center;
     margin-top: 30px;
+    text-decoration: underline rgba(52, 25, 12, 0.5) ;
 }
-.p2-sec8{line-height: 15px; margin-top: 20px; text-align: left; margin-left: 33px; transition: all 1s; font-size: 15px;}
+.p2-sec8{line-height: 15px; margin-top: 20px; text-align: left; margin-left: 33px; transition: all 1s; font-size: 15px;text-decoration: underline rgba(52, 25, 12, 0.5);}
 .p2-sec8:hover{text-decoration: underline; transform: scale(1.1); cursor: pointer;}
 .p3-sec8 a{text-decoration: none; border: none; cursor: default;color: black;}
 .div-text-sec8{margin-left: 450px ;margin-top: 20px;}
@@ -1394,6 +1393,38 @@ border:1px solid white;
     }
     50% {
         opacity: 0;
+    }
+}
+
+@media(max-width:768px){
+    .eigth-section{
+        min-height: 1200px;
+        width: 100%;
+        
+    }
+
+    .div8-1{
+        width: 100%;
+        min-height: 160px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .div-input{
+        background-color: green;
+        display: none;
+    }
+    .sec8-father2{
+        width: 100%;
+        min-height: 900px;
+    }
+    .divline-sec8{
+        display: none;
+    }
+    .div-text-sec8{
+        margin: 0;
+        text-align: center;
     }
 }
 
